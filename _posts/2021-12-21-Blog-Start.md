@@ -1,7 +1,11 @@
 ---
 layout: single
-title: "참고 Git Hub 사이트."
+title: "포스트 확인 및 기본 설정"
 categories: GitBlog
+toc: true
+toc_sticky: true
+toc_label: "페이지 주요 목차"
+classes: wide
 ---
 
 
@@ -23,6 +27,12 @@ https://rubyinstaller.org/downloads/ 여기서 WITH DEVIKIT 중 가장 위에 �
 다음 bundle exec jekyll serve 명령어를 쳐주면 로컬 환경에서 jekyll 서버가 작동된다.  
 
 
+## 블로그 주요 Page 구성
+
+toc: true  
+toc_sticky: true  
+toc_label: "페이지 주요 목차"  
+classes: wide
 
 
 

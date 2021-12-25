@@ -11,11 +11,12 @@ classes: wide
 
 ## <u>줄/문단</u>
 ### @줄바꾸기
-**(1)  문장 뒤에 스페이스바를 두번 + Enter 해준다.**  
-안녕하세요.    
+**방법1.  문장 뒤에 스페이스바를 두번 + Enter 해준다.**  
+**방법2. \<br> 또한 줄바꿈을 해주는 HTML 태그이다.**
+
+안녕하세요.   
 저는 한스킴이라고, 합니다.
 
-**(2) \<br> 또한 줄바꿈을 해주는 HTML 태그이다.**
 <br>
 안녕하세요.<br>
 저는 한스킴이라고 합니다.
@@ -37,3 +38,22 @@ classes: wide
 - 1th  
   - 2th  
     - 3th  
+
+## <u>링크</u>
+### @일반링크
+```
+<https://www.naver.com>
+```
+<https://www.naver.com>
+
+### @설명이 있는링크
+```
+[네이버 홈페이지](https://www.naver.com)
+```
+[네이버 홈페이지](https://www.naver.com)
+
+
+
+
+## <u>참조레퍼런스</u>
+<https://github-wiki-see.page/m/gnuoynawh/wiki/wiki/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-(MarkDown-Syntax)#5.-%EB%A7%81%ED%81%AC-links>

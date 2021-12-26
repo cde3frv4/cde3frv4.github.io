@@ -34,11 +34,18 @@ classes: wide
 
 ### **3. tDQSH – tWLO – tWLOE**
 
- \- DRAM은 DQS_t - DQS_c의 상승 에지로 CK_t - CK_c 상태를 샘플링하고, 모든 DQ 비트에 대한 피드백을 비동기식으로 제공한다. DQS Rising edge에서 CLK이 “0” 이면 DQ에 “0”을 , CLK이 “1”이면 DQ에 “1”을 출력한다. 
+ \- DRAM은 DQS_t - DQS_c의 상승 에지로 CK_t - CK_c 상태를 샘플링하고, 모든 DQ 비트에 대한 피드백을 비동기식으로 제공한다. DQS 상승에지에서 CK이 “0” 이면 DQ에 “0”을 , CK이 “1”이면 DQ에 “1”을 출력한다.  
 
  (1) tWLO   : Rising edge에서 샘플링한 CK의 피드백이 DQ로 나오는 시점
-
  (2) tWLOE :  가장 빨리 전송되는 DQ bit와 늦게 전송되는  DQ bit 시간차
+
+
+
+
+
+ㅣㅁㄴ이ㅣㅁㄴㅇ
+
+
 
 <center><img src="/assets\images\DDR4\WriteLeveling\WriteLevelingSequence.png" width="100%"  title="" alt="WriteLeveling-Entry"/>
 <figcaption>WriteLeveling-Entry</figcaption></center>

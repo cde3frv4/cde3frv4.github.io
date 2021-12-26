@@ -17,9 +17,6 @@ classes: wide
 안녕하세요.   
 저는 한스킴이라고, 합니다.
 
-<br>
-안녕하세요.<br>
-저는 한스킴이라고 합니다.
 
 ### @문단 나누기
 **두줄을 띄어쓰기 진행**
@@ -67,24 +64,38 @@ classes: wide
 
 
 ### @이미지 링크
-**방법1.HTML 방식**  
+
+**(1) 일반 방식**  
+```
+![image](/assets\images\sample.png "하얀 강아지")
+```
+![image](/assets\images\sample.png "하얀 강아지")
+
+**(2) HTML 방식 - 확장 및 정렬**  
 \<center></center> 는 중앙정렬이다. 또한 width, height를 써서 그림 크기 조정가능
 ```
 <center>
-    <img src="https://i.esdrop.com/d/ZklKfna5T3.jpg" title="하얀 강아지" width="100%">
+    <img src="/assets\images\sample.png" title="하얀 강아지" width="400" height="400">
     <figcaption>하얀 강아지</figcaption>
 </center>  
 ```
 <center>
-    <img src="https://i.esdrop.com/d/ZklKfna5T3.jpg" title="하얀 강아지" width="100%">
+    <img src="/assets\images\sample.png" title="하얀 강아지" width="200" height="200">
     <figcaption>하얀 강아지</figcaption>
 </center>  
   
-**방법2.일반 방식**  
-```
-![하얀 강아지](https://i.esdrop.com/d/ZklKfna5T3.jpg "하얀 강아지")
-```
 
-</figure>
+**(3) HTML 방식 - 확장 및 정렬**   
+그림을 클릭하면 구글 홈페이지로 이동
+
+```
+![image](/assets\images\sample.png)(www.google.com)
+```
+[![image](/assets\images\sample.png)]( www.google.com)
+
+
+
+
+
 ## <u>참조레퍼런스</u>
 <https://github-wiki-see.page/m/gnuoynawh/wiki/wiki/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4-%EB%AC%B8%EB%B2%95-(MarkDown-Syntax)#5.-%EB%A7%81%ED%81%AC-links>

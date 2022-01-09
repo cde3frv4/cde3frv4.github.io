@@ -1,10 +1,10 @@
 ---
-title: "Memory"
+title: "GitHub"
 layout: archive
-permalink: categories/dram
+permalink: categories/Blog
 author_profile: true
 sidebar_main: true
 ---
 
-{% assign posts = site.categories.dram %}
+{% assign posts = site.categories.blog %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

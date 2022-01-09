@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "DDR4 - WriteLeveling"
-categories: dram
+categories: ddr4
 tag: [ddr4]
 toc: true
 toc_sticky: true

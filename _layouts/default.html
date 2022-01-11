@@ -10,8 +10,17 @@
 -->
 <html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
   <head>
+
     {% include head.html %}
     {% include head/custom.html %}
+      <!--@[Add]KHK-->
+      <style type="text/css" >
+       a:link{ color:black; text-decoration:none; }    /* 처음 방문링크 */
+       a:visited{ color:black; text-decoration:overline; } /* 방문 후 */ 
+       a:active{ color:red; background-color:Black } /* 클릭할 때 */ 
+       a:hover{ color:blue; font-size:20pt; } /* 마우스 오버시 */ 
+      </style>
+      <!--@[Add]KHK-->
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">

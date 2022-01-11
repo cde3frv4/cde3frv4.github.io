@@ -1,5 +1,5 @@
 ---
-title: "Mem"
+title: "DRAM-DDR4"
 layout: archive
 permalink: categories/DDR4
 author_profile: true

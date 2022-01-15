@@ -10,6 +10,8 @@ html {
   background-color: $background-color;
   font-size: 16px;
 
+  //@[Del]KHK
+  /*
   @include breakpoint($medium) {
     font-size: 18px;
   }
@@ -21,7 +23,7 @@ html {
   @include breakpoint($x-large) {
     font-size: 22px;
   }
-
+*/
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }

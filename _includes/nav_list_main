@@ -16,7 +16,7 @@
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 {% for category in site.categories %}
                     {% if category[0] == "ddr4" %}
-                        <li><a href="/categories/ddr4" class="">ddr4 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/DDR4" class="">ddr4 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -25,7 +25,7 @@
                 <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 {% for category in site.categories %}
                     {% if category[0] == "ddr5" %}
-                        <li><a href="/categories/ddr5" class="">ddr5 ({{category[1].size}})</a></li>
+                        <li><a href="/categories/DDR5" class="">ddr5 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -33,7 +33,7 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "UEFI" %}
-                        <li><a href="/categories/tianocore" class="">Tianocore ({{category[1].size}})</a></li>
+                        <li><a href="/categories/Tianocore" class="">Tianocore ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

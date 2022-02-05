@@ -40,14 +40,34 @@ classes: wide
 ### @강조
 ```  
 **강조된 텍스트입니다**  
-```  
-강조된 텍스트입니다
+```
+
+**강조된 텍스트입니다** 
 
 ### @글씨색
+
 ```  
 <span style="color:yellow">노란 글씨입니다.</span>
-```    
+```
 <span style="color:yellow">노란 글씨입니다.</span>
+
+## 인용문
+
+```
+>인용문입니다. 
+```
+
+```
+<blockquote>인용문입니다.</blockquote>
+```
+
+> 인용문입니다. 
+
+<blockquote>인용문입니다.</blockquote>
+
+
+
+
 
 ## <u>링크</u>
 ### @일반링크

@@ -109,7 +109,7 @@ body {
 			opacity: 1;
 		}
 	}
-
+  
   p,
   li,
   dl {
@@ -155,11 +155,18 @@ body {
     font-size: $type-size-6;
   }
 
+ /*[Add]KHK added to not to fix italic*/ 
+ blockquote{
+   font-style: normal;
+ }
+
   /* blockquote citations */
   blockquote + .small {
     margin-top: -1.5em;
     padding-left: 1.25rem;
   }
+
+
 }
 
 .page__hero {

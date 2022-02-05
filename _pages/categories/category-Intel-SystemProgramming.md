@@ -1,10 +1,10 @@
 ---
-title: "DRAM-DDR4"
+title: "SystemProgramming"
 layout: archive
-permalink: categories/DDR4
+permalink: categories/Systempro
 author_profile: true
 sidebar_main: true
 ---
 
-{% assign posts = site.categories.DDR4 %}
+{% assign posts = site.categories.Systempro %}
 {% for post in posts %} {% include archive-single.html type=page.entries_layout %} {% endfor %}

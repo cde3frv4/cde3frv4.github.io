@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "DDR4 - hPPR"
-categories: DDR4
+title: "DDR5 - 5"
+categories: DDR5
 toc: true
 toc_sticky: true
 toc_label: "페이지 주요 목차"

@@ -8,24 +8,11 @@
   <ul class="nav__items" id="category_tag_menu">
       <li>📂Total [{{sum}}] </li>
       <li>
-        <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
-        <span class="nav__sub-title">Memory </span>
-            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
+        <span class="nav__sub-title">Intel 64&IA32</span>
             <ul>
-                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
-                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
                 {% for category in site.categories %}
-                    {% if category[0] == "ddr4" %}
-                        <li><a href="/categories/DDR4" class="">ddr4 ({{category[1].size}})</a></li>
-                    {% endif %}
-                {% endfor %}
-            </ul>
-            <ul>
-                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
-                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
-                {% for category in site.categories %}
-                    {% if category[0] == "ddr5" %}
-                        <li><a href="/categories/DDR5" class="">ddr5 ({{category[1].size}})</a></li>
+                    {% if category[0] == "Systempro" %}
+                        <li><a href="/categories/Systempro" class="">Systemprogramming ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -45,11 +32,6 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-
-
-
-
-
       </li>
   </ul>
 </nav>

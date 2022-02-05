@@ -1,8 +1,8 @@
 ---
 layout: single
 title: "DDR4 - WriteLeveling"
-categories: ddr4
-tag: [ddr4]
+categories: DDR4
+tag: [DDR4]
 toc: true
 toc_sticky: true
 toc_label: "페이지 주요 목차"

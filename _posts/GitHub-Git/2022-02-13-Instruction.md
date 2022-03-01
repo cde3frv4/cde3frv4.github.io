@@ -16,17 +16,15 @@ nav: main
 
 ## 1.Branch 관련명령
 
+로컬 브랜치를 만든다. 
 ```shell
 git branch (브랜치명)
 ```
 
-로컬 브랜치를 만든다. 
-
+원격 브랜치를 삭제한다. 
 ```shell
 git push origin --delete (브랜치명)
 ```
-
-원격 브랜치를 삭제한다. 
 
 
 

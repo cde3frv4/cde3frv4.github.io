@@ -1,34 +1,63 @@
 ---
 layout: single
-title: "[Git]주요 명령어"
+title: "[Git] Instruction(전체요약)주요 명령어"
 categories: Git
 toc: true
 toc_sticky: true
-toc_label: "페이지 주요 목차"
+toc_label: "주요 목차"
 classes: wide
 author_profile: true
 sidebar:
 nav: main
-#published: false
+#published: fals
 ---
 
+##  Git 최초 설정
+
+```bash
+#최신 버전을 확인한다.
+$ git version
+git version 2.31.1.windows.1
+
+#터미널 프로그램에서 이름/메일을 설정한다.
+$ git config --global user.name "HansKim"
+$ git config --global user.email "abcd@gmail.com"
+
+#터미널 프로그램에서 이름/메일 확인한다. 
+$ git config --global user.name
+HansKim
+$ git config --global user.email
+abcd@gmail.com
+```
+
+```bash
+#기본 브랜치 명을 변경한다. 
+$ git config --global init.defaultBranch main
+# Repository 폴더 만들고, 깃 시작
+$ git init
+```
 
 
-## 1.Branch 관련명령
 
-로컬 브랜치를 만든다. 
-```shell
+
+
+## Branch 명령
+
+```bash
+#기본 브랜치명을 'main'으로 변경한다. 
+git config --global init.defaultBranch main
+#로컬 브랜치를 만든다.
 git branch (브랜치명)
 ```
 
 원격 브랜치를 삭제한다. 
-```shell
+```bash
 git push origin --delete (브랜치명)
 ```
 
 
 
-```shell
+```python
 git config --global user.name
 ```
 
@@ -43,64 +72,3 @@ git config --global user.email
 git config --global init.defaultBranch main
 ```
 
-
-## 2. 프로젝트 생성 & Git 관리 시작
-
-적당한 위치에 원하는 이름으로 폴더를 생성하고 **VS Code**로 열람
-
-해당 폴더에서(VS Code 터미널 기본) 아래 명령어 입력
-
-```
-git init
-```
-
-
-폴더에 숨김모드로 **.git** 폴더 생성 확인
-
-- 🛑 이 폴더를 지우면 Git 관리내역이 삭제됩니다. (현 파일들은 유지)
-- 맥에서 숨김 파일 보기: `command` + `shift` + `.`
-
-아래의 파일들 생성
-
-*tigers.yaml*
-
-```yaml
-team: Tigers
-manager: John
-members:
-- Linda
-- William
-- David
-```
-
-*lions.yaml*
-
-```yaml
-team: Lions
-manager: Mary
-members:
-- Thomas
-- Karen
-- Margaret
-```
-
-### ❗️ 모든 작업(파일 생성, 수정)마다 파일을 꼭 **저장**
-
-터미널에 아래 명령어 입력
-
-```
-git status
-```
-
-
-## 3. 소스트리로 해보기
-
-### 현존하는 저장소 추가
-
-- 소스트리에 폴더를 드래그하거나, `로컬 저장소 추가`
-
-
-### Git이 관리하는 저장소 새로 만들기
-
-- .git 폴더 삭제 후 진행
-- 소스트리에 폴더를 드래그하거나, `로컬 저장소 생성`

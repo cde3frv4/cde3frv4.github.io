@@ -1,5 +1,6 @@
 # Vim
-*~
+#It ignores all files whose name ends in ~, which is a usual suffix for text editors backup files.
+*~     
 *.sw[p_]
 
 # Sublime Text

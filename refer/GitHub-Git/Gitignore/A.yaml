@@ -1,0 +1,5 @@
+class: A
+teacher: Bob
+student:
+- John
+- Mark

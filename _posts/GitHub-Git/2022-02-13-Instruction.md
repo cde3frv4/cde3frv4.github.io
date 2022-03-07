@@ -12,7 +12,7 @@ nav: main
 #published: fals
 ---
 
-##  Git 최초 설정
+## 1.Git 최초 설정
 
 ```bash
 #최신 버전을 확인한다.
@@ -31,11 +31,28 @@ abcd@gmail.com
 ```
 
 ```bash
-#기본 브랜치 명을 변경한다. 
+#기본 브랜치 명을 변경. 
 $ git config --global init.defaultBranch main
 # Repository 폴더 만들고, 깃 시작
 $ git init
 ```
+
+## 2. status/ add/ commit 명령
+
+```bash
+#상태 확인
+$ git status
+#특정 파일을 담는다. 
+$ git add A.yaml
+#모든 파일을 담는다. 
+$ git add .
+```
+
+##  3. Reset/Revert 명령
+
+
+
+
 
 
 
@@ -51,11 +68,10 @@ git branch (브랜치명)
 ```
 
 원격 브랜치를 삭제한다. 
+
 ```bash
 git push origin --delete (브랜치명)
 ```
-
-
 
 ```python
 git config --global user.name
@@ -65,10 +81,8 @@ git config --global user.name
 git config --global user.email
 ```
 
-
 ### 기본 브랜치명 변경
 
 ```shell
 git config --global init.defaultBranch main
 ```
-

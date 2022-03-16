@@ -5,7 +5,7 @@ categories: Git
 toc: true
 toc_sticky: true
 toc_label: "주요 목차"
-classes: wide
+#classes: wide
 author_profile: true
 sidebar:
 nav: main

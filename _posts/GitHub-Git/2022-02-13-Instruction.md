@@ -50,16 +50,20 @@ $ git add .
 $ git add -p
 #변경사항 확인하고, 커밋
 $ git commit -v
+#커밋메시지 수정
+$ git commit --amend -m 'Add members to Panthers and Pumas'
 ```
 
-##  3. Reset/Revert 명령
-
+##  3. Reset/Revert/Restore 명령
 ```bash
 $ git reset --soft b6867ad
 $ git reset --mixed b6867ad
 $ git reset --hard b6867ad
 
 $ git revert 4323d18
+
+$ git restore --staged .
+$ git restore --source=8859d40 .
 ```
 
 ## 4.원하는  위치 HEAD 이동
@@ -69,15 +73,13 @@ $ git checkout HEAD~
 $ git checkout b6867ad
 ```
 
-
-
 ## 5.Branch 명령
 
 ```bash
 #기본 브랜치명을 'main'으로 변경한다. 
 $ git config --global init.defaultBranch main
 #로컬 브랜치를 만든다.
-$ $ git branch (브랜치명)
+$ git branch (브랜치명)
 #모든 브랜치를 본다.
 $ git branch -a
 ```
@@ -92,8 +94,25 @@ $ git switch -t origin/(브랜치명)
 $ git push origin --delete (브랜치명)
 ```
 
-## 7.HELP 및 기타 옵션
+## 6.Clean 옵션
+```bash
+#강제 지우기 폴더 및 나머지 파일 
+$ git clean -df
+#삭제될 파일 보여주기
+$ git clean -dn
+Would remove dir/
+Would remove toClean1.txt
+Would remove toClean2.txt
+# 인터렉티브 모드
+$ git clean -di
+Would remove the following items:
+  dir/          toClean1.txt  toClean2.txt
+*** Commands ***
+    1: clean                2: filter by pattern    3: select by numbers
+    4: ask each             5: quit                 6: help
+```
 
+## 7.HELP 및 기타 옵션
 ```bash
 #기본적인 명령어들과 설명
 $ git help
@@ -101,11 +120,21 @@ $ git help
 $ git help -a
 #해당 명령어의 설명과 옵션 보기
 $ git (명령어) -h
+#현존 보기
+$ git tag
+#태그 특정 위치 작성
+$ git tag v1.0.1 93bee63
+#태그 삭제
+$ git tag -d 2.0.0
+#태그 수정
+$ git tag v2.0.0 -m '자진모리 확인'
+$ git show v2.0.0
+
 ```
 
 
 
-```shell
+```bash
 #현재 모든 설정값 보기
 $ git config --list
 $ git config --global --list
